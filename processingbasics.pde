@@ -13,11 +13,19 @@ Just like this. Great for paragraph comments at the start of a program and testi
 */
 
 //STEP 3: Add Vars to Brush Size for Step 2
-/*int brushMin = 10;
+int brushMin = 10;
 int brushMax = 80;
 int currBrushSize = 50;
-*/
 
+
+//STEP 4 Sound
+//import processing.sound.*;
+//SoundFile file;
+
+//STEP 5 Images
+//PImage img;
+//int moveSpeed = 1;
+//int xMove = 100;
   
 void setup() {
   //STEP 01: Debug with a comment
@@ -33,10 +41,26 @@ void setup() {
   stroke(255);    //The stroke is White
   //stroke (0, 0, 255);  //The Stroke is Blue
  
+ //STEP 4 for sound loading
+// file = new SoundFile(this, "applause.mp3");
+
+//STEP 5
+//img = loadImage("car.png");
 }
+
+void draw() {
+  background(192, 64, 0);
+  ellipse(50, 50, 80, 80);
+  line(50, 50, mouseX, mouseY);  
+  //STEP 5 image move
+  //image(img, xMove, 100);
+  //xMove +=moveSpeed;
+}
+
 
 //STEP 02 and 1/2: Processing Sketch Structures
 //This code block loops.
+/*
 void draw() {
   if (mousePressed) {
     fill(0);
@@ -46,14 +70,15 @@ void draw() {
   ellipse(mouseX, mouseY, 50, 50);
   //ellipse(mouseX, mouseY, currBrushSize, currBrushSize);  //Turn on in STEP 3
 }
-
-/*
-void draw() {
-  background(192, 64, 0);
-  ellipse(50, 50, 80, 80);
-  line(50, 50, mouseX, mouseY); 
-}
 */
+
+
+
+//STEP 4
+
+//void draw() {  
+//}
+
 //TURN ON in STEP 3
 /*
 void keyPressed() {
@@ -64,9 +89,16 @@ void keyPressed() {
     if (keyCode == DOWN && currBrushSize > brushMin) {
       currBrushSize -= 5;
     } 
+    }
+    if (key == 'p'){
+      file.play();
+    }
+     if (key == 's'){
+      file.stop();
   } 
 }
 */
+
 
 void mouseClicked() {
 }
