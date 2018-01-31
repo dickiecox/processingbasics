@@ -17,9 +17,15 @@ Check out some of my my other repositories on [GitHub](https://github.com/dickie
 
 ## Great Helping Links
 [Getting Started with Processing](https://processing.org/tutorials/gettingstarted/)
+
 [Processing Overview](https://processing.org/tutorials/overview/)
+
 [Processing Drawing](https://processing.org/tutorials/drawing/)
+
 [Processing Color](https://processing.org/tutorials/color/)
+
 [Processing Objects](https://processing.org/tutorials/objects/)
+
 [Processing Interactivity](https://processing.org/tutorials/interactivity/)
+
 [Processing Typography](https://processing.org/tutorials/typography/)
